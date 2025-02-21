@@ -15,7 +15,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/image_2"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-16dp" />
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
         android:id="@+id/logo"
@@ -98,6 +98,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:backgroundTint="@null"
         android:background="@drawable/btn_bg"
         android:text="Login"
         app:layout_constraintEnd_toEndOf="@+id/inputPasswordLogin"
