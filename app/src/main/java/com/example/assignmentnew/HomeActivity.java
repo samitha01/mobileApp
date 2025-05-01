@@ -24,11 +24,9 @@ public class HomeActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Existing code for exams button
         ImageView btn = findViewById(R.id.examsBtn);
         btn.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, ExamActivity.class)));
 
-        // New code for subjects button
         ImageView subjectsButton = findViewById(R.id.subjectsBtn);
         subjectsButton.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, SubjectsActivity.class)));
     }
