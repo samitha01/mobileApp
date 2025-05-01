@@ -2,8 +2,7 @@ package com.example.assignmentnew;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.TextView;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,10 +17,19 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_home);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // Existing code for exams button
+        ImageView btn = findViewById(R.id.examsBtn);
+        btn.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, ExamActivity.class)));
+
+        // New code for subjects button
+        ImageView subjectsButton = findViewById(R.id.subjectsBtn);
+        subjectsButton.setOnClickListener(v -> startActivity(new Intent(HomeActivity.this, SubjectsActivity.class)));
     }
 }

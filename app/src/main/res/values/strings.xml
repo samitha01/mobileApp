@@ -1,3 +1,10 @@
-<resources>
-    <string name="app_name">Assignment new</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="DuplicateDefinition">Assignment new</string>
+
+    <!-- Subject Button Texts -->
+    <string name="select_subject">Select a Subject</string>
+    <string name="mathematics">Mathematics</string>
+    <string name="science">Science</string>
+    <string name="it">IT</string>
+    <string name="english">English</string>
 </resources>

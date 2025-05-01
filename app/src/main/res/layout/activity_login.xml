@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -44,8 +43,8 @@
         android:drawablePadding="10dp"
         android:drawableTint="#FFFFFF"
         android:ems="10"
-        android:hint="Username"
-        android:inputType="text"
+        android:hint="Password"
+        android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"

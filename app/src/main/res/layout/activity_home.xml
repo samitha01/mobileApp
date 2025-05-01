@@ -48,6 +48,7 @@
                         android:layout_width="77dp"
                         android:layout_height="75dp"
                         android:layout_marginEnd="4dp"
+                        android:contentDescription="TODO"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -91,6 +92,7 @@
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="24dp"
+                    android:baselineAligned="false"
                     android:orientation="horizontal">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
@@ -101,9 +103,10 @@
                         android:background="@drawable/rounded_bghighlight">
 
                         <ImageView
-                            android:id="@+id/imageView6"
+                            android:id="@+id/subjectsBtn"
                             android:layout_width="63dp"
                             android:layout_height="63dp"
+                            android:contentDescription="TODO"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintHorizontal_bias="0.517"
@@ -114,8 +117,8 @@
 
                         <TextView
                             android:id="@+id/textView3"
-                            android:layout_width="86dp"
-                            android:layout_height="46dp"
+                            android:layout_width="70dp"
+                            android:layout_height="40dp"
                             android:text="Subjects"
                             android:textAlignment="center"
                             android:textColor="@color/white"
@@ -125,7 +128,8 @@
                             app:layout_constraintEnd_toEndOf="@+id/imageView6"
                             app:layout_constraintHorizontal_bias="0.522"
                             app:layout_constraintStart_toStartOf="@+id/imageView6"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+                            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+                            tools:ignore="UnknownId" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -134,7 +138,9 @@
                         android:layout_height="170dp"
                         android:layout_marginStart="12dp"
                         android:layout_weight="0.5"
-                        android:background="@drawable/rounded_bghighlight">
+                        android:background="@drawable/rounded_bghighlight"
+                        android:baselineAligned="false"
+                        android:contentDescription="TODO">
 
                         <ImageView
                             android:id="@+id/imageView4"
@@ -175,6 +181,7 @@
                     android:orientation="horizontal">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
+
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_marginEnd="12dp"
@@ -182,9 +189,10 @@
                         android:background="@drawable/rounded_bghighlight">
 
                         <ImageView
-                            android:id="@+id/imageView7"
+                            android:id="@+id/examsBtn"
                             android:layout_width="63dp"
                             android:layout_height="63dp"
+                            android:contentDescription="TODO"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -214,7 +222,8 @@
                         android:layout_height="170dp"
                         android:layout_marginStart="12dp"
                         android:layout_weight="0.5"
-                        android:background="@drawable/rounded_bghighlight">
+                        android:background="@drawable/rounded_bghighlight"
+                        android:contentDescription="TODO">
 
                         <ImageView
                             android:id="@+id/imageView5"
@@ -233,7 +242,7 @@
                             android:layout_height="39dp"
                             android:text="Quizes"
                             android:textAlignment="center"
-                            android:textColor="@color/white"
+                            android:textColor="#F5F5F5"
                             android:textSize="18sp"
                             android:textStyle="bold"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -326,7 +335,9 @@
                 android:layout_height="60dp"
                 android:background="@drawable/navigation_bg"
                 android:layout_margin="20dp"
-                android:padding="4dp">
+                android:baselineAligned="false"
+                android:padding="4dp"
+                tools:ignore="VisualLintBottomNav">
 
                 <LinearLayout
                     android:layout_width="match_parent"
